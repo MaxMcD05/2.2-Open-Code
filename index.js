@@ -16,12 +16,12 @@ function getRandomNumber() { //2nd
 
 function getRandomSymbol() { //3rd
     const symbols = '!@#$%^&(){}[]=<>/,.';
-    return symbols[Math.floor(Math.random() symbols.length)];
+    return symbols[Math.floor(Math.random() symbol.length)];
 }
 
 generatePassword.addEventListener('click', () => {
     let password = '';
-    const passwordLength = 0; //Password Length but how do I make it user customizable
+    const passwordLength = propmpt("password length"); //Password Length but how do I make it user customizable
     const passwordTypesArr = Object.values(passwordTypes);
 
     for (let i = 0; i < passwordLength; i++) {
