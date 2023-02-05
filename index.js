@@ -17,14 +17,14 @@ function getRandomSymnbol(){
 }
 
 
-//not sure if im gonna use this or the other so im saving it in //function getRandomNumber() { and
-    //return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+function getRandomNumber() {
+return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 
 }
 
-function getRandomSymbol() { //3rd (bur I don't think i can do it like 1st 2)
-    const symbols = '!@#$%^&(){}[]=<>/,.';
-    return symbols[Math.floor(Math.random() symbols.length)];
+//function getRandomSymbol() { //3rd (bur I don't think i can do it like 1st 2)
+   // const symbols = '!@#$%^&(){}[]=<>/,.';
+   // return symbols[Math.floor(Math.random() symbols.length)];
 	//this one works a bit differently so I am still working on figuring it out.
 }
 
