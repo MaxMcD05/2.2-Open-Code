@@ -1,4 +1,4 @@
-const generatePassword1 = document.getElementById('generate');
+const generatePassword = document.getElementById('generate');
 
 const passwordTypes = { //Creating 3 different Arrays (Arr)
     letter: getRandomLetter,
