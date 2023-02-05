@@ -27,7 +27,7 @@ return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
    // const symbols = '!@#$%^&(){}[]=<>/,.';
    // return symbols[Math.floor(Math.random() symbols.length)];
 	//this one works a bit differently so I am still working on figuring it out.
-}
+
 
 generatePassword.addEventListener('click', () => {
     let password = '';
