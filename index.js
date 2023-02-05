@@ -1,27 +1,27 @@
 const generatePassword1 = document.getElementById('generate');
 
-const passwordTypes = {
+const passwordTypes = { //Creating 3 different Arrays (Arr)
     letter: getRandomLetter,
     number: getRandomNumber,
     symbol: getRandomSymbol,
 };
 
-function getRandomLetter() {
+function getRandomLetter() { //First Array
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
-function getRandomNumber() {
+function getRandomNumber() { //2nd
     return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
 
-function getRandomSymbol() {
+function getRandomSymbol() { //3rd
     const symbols = '!@#$%^&(){}[]=<>/,.';
     return symbols[Math.floor(Math.random() symbols.length)];
 }
 
 generatePassword.addEventListener('click', () => {
     let password = '';
-    const passwordLength = 0;
+    const passwordLength = 0; //Password Length but how do I make it user customizable
     const passwordTypesArr = Object.values(passwordTypes);
 
     for (let i = 0; i < passwordLength; i++) {
