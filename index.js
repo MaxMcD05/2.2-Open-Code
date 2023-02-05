@@ -8,15 +8,24 @@ const passwordTypes = { //Creating 3 different Arrays (Arr)
 
 function getRandomLetter() { //First Array
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+	//charCode is an array of all characters labeled 0-127. It says +97 to start the search at letter A,
 }
 
-function getRandomNumber() { //2nd
-    return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+function getRandomSymnbol(){
+	return String.fromCharCode(Math.floor(Math.random() * 15) + 33);
+	//this one gives trouble but follows the same logic as the one before
+}
+
+
+//not sure if im gonna use this or the other so im saving it in //function getRandomNumber() { and
+    //return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+
 }
 
 function getRandomSymbol() { //3rd (bur I don't think i can do it like 1st 2)
     const symbols = '!@#$%^&(){}[]=<>/,.';
-    return symbols[Math.floor(Math.random() symbol.length)];
+    return symbols[Math.floor(Math.random() symbols.length)];
+	//this one works a bit differently so I am still working on figuring it out.
 }
 
 generatePassword.addEventListener('click', () => {
