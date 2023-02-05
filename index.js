@@ -18,4 +18,12 @@ function getRandomSymbol() {
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
+generatePassword.addEventListener('click', () => {
+    let password = '';
+    const passwordLength = 0;
+    const passwordTypesArr = Object.values(passwordTypes);
 
+}
+
+console.log(password);
+});
