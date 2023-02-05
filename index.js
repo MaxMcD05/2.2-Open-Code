@@ -18,5 +18,4 @@ function getRandomSymbol() {
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
-}
 
