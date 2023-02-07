@@ -27,6 +27,9 @@ return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
    // return symbols[Math.floor(Math.random() symbols.length)];
 	//this one works a bit differently so I am still working on figuring it out.
 
+//or maybe I could have tried making a selection of unique characters like:
+// var symbolsArr = ['!','@','#','$','%','&','*','+','-'] so I can avoid unwanted symbols the ASCII has
+
 generatePassword.addEventListener('click', () => {
     let password = '';
     const passwordLength = propmpt("password length"); //Password Length but how do I make it user customizable
