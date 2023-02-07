@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
-* {
-	box-sizing: border-box;
-}
-
 body {
 	background-color: #8dd354;
 	color: rgb(158, 50, 50);
