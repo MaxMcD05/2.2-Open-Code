@@ -1,5 +1,7 @@
 const generatePassword = document.getElementById('generate');
-
+let button = document.getElementById('btn')
+button.addEventListener('generatePassword', generatePassword);
+function generatePassword(){
 const passwordTypes = { //Creating 3 different Arrays. Found a was a way to create and block each one. (Arr opposed to charCode)
     letter: getRandomLetter,
     number: getRandomNumber,
@@ -30,7 +32,7 @@ return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 
 //or maybe I could have tried making a selection of unique characters like:
 // var symbolsArr = ['!','@','#','$','%','&','*','+','-'] so I can avoid unwanted symbols the ASCII has
-
+};
 generatePassword.addEventListener('click', () => {
     let password = ''; //choice of User
     const passwordLength = prompt("password length"); //display
