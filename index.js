@@ -21,7 +21,7 @@ return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 //ASCII numbers start at 48 and there are 10
 
 }
-
+//Other Possible ways I was working with Symbols:
 //function getRandomSymbol() { //3rd (bur I don't think i can do it like 1st 2)
    // const symbols = '!@#$%^&(){}[]=<>/,.';
    // return symbols[Math.floor(Math.random() symbols.length)];
