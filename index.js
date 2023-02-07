@@ -40,6 +40,11 @@ generatePassword.addEventListener('click', () => {
             then (prompt("This is too short to be secure"));
             return false;
         }
+
+        if (passwordLength > 20){
+            then (prompt("This password is too long"));
+            return false;
+        }
     }
     for (let i = 0; i < passwordLength; i++) {
         const passwordType = passwordTypesArr[Math.floor(Math.random() * passwordTypesArr.length)];
