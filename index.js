@@ -33,6 +33,7 @@ generatePassword.addEventListener('click', () => {
     let password = '';
     const passwordLength = propmpt("password length"); //Password Length but how do I make it user customizable
     const passwordTypesArr = Object.values(passwordTypes);
+    const passwordTypesSelected = [];//for user interface side
 
     for (let i = 0; i < passwordLength; i++) {
         const passwordType = passwordTypesArr[Math.floor(Math.random() * passwordTypesArr.length)];
