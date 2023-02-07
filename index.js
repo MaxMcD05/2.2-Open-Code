@@ -1,6 +1,6 @@
 const generatePassword = document.getElementById('generate');
 
-const passwordTypes = { //Creating 3 different Arrays (Arr)
+const passwordTypes = { //Creating 3 different Arrays. Found a was a way to create and block each one. (Arr opposed to charCode)
     letter: getRandomLetter,
     number: getRandomNumber,
     symbol: getRandomSymbol,
