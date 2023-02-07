@@ -16,7 +16,6 @@ function getRandomSymbol(){
 	//this one gives trouble but follows the same logic as the one before. There are 15 symbols and it starts at 33 on ASCII
 }
 
-
 function getRandomNumber() {
 return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 //ASCII numbers start at 48 and there are 10
