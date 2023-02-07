@@ -28,6 +28,12 @@ return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
    // return symbols[Math.floor(Math.random() symbols.length)];
 	//this one works a bit differently so I am still working on figuring it out.
 
+generatePassword.addEventListener('click', () => {
+    let password = '';
+    const passwordLength = propmpt("password length"); //Password Length but how do I make it user customizable
+    const passwordTypesArr = Object.values(passwordTypes);
+    const passwordTypesSelected = [];//for user interface side
+
     function UserPrompts(){
         passwordLength = (prompt("Enter Password Length"));
         if (passwordLength < 6){
@@ -35,13 +41,6 @@ return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
             return false;
         }
     }
-
-generatePassword.addEventListener('click', () => {
-    let password = '';
-    const passwordLength = propmpt("password length"); //Password Length but how do I make it user customizable
-    const passwordTypesArr = Object.values(passwordTypes);
-    const passwordTypesSelected = [];//for user interface side
-
     for (let i = 0; i < passwordLength; i++) {
         const passwordType = passwordTypesArr[Math.floor(Math.random() * passwordTypesArr.length)];
         password += passwordType();
