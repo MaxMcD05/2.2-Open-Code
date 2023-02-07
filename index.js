@@ -6,17 +6,17 @@ const passwordTypes = { //Creating 3 different Arrays. Found a was a way to crea
     symbol: getRandomSymbol,
 };
 
-function getRandomLetter() { //First Array
+function getRandomLetter() { // Letter Array
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 	//charCode is an array of all characters labeled 0-127 using ASCII. It says +97 to start the search at letter A as A is the 97th thing listed on the ASCII array. Then it counts 26 past that which are all 26 letters.
 }
 
-function getRandomSymbol(){
+function getRandomSymbol(){ // Symbol Array
 	return String.fromCharCode(Math.floor(Math.random() * 15) + 33);
 	//this one gives trouble but follows the same logic as the one before. There are 15 symbols and it starts at 33 on ASCII
 }
 
-function getRandomNumber() {
+function getRandomNumber() { // Number Array
 return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 //ASCII numbers start at 48 and there are 10
 
