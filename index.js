@@ -50,6 +50,7 @@ generatePassword.addEventListener('click', () => {
         const passwordType = passwordTypesArr[Math.floor(Math.random() * passwordTypesArr.length)];
         password += passwordType();
     }
+return password;
 
     console.log(password);
 });
