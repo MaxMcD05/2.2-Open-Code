@@ -28,6 +28,13 @@ return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
    // return symbols[Math.floor(Math.random() symbols.length)];
 	//this one works a bit differently so I am still working on figuring it out.
 
+    function UserPrompts(){
+        passwordLength = (prompt("Enter Password Length"));
+        if (passwordLength < 6){
+            then (prompt("This is too short to be secure"));
+            return false;
+        }
+    }
 
 generatePassword.addEventListener('click', () => {
     let password = '';
