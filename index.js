@@ -8,6 +8,7 @@ const passwordTypes = { //Creating 3 different Arrays. Found a was a way to crea
     symbol: getRandomSymbol,
 };
 //CharCode = pre"programmed" array of all characters in accordance to ASCII
+//This particular function along with the random number one is inspired by the last source listed in my OpenCode Doc.
 
 function getRandomLetter() { // Letter Array
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
