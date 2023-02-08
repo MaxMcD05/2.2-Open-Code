@@ -1,6 +1,7 @@
 const generatePassword = document.getElementById('generate');
-let button = document.getElementById('btn')
-button.addEventListener('generatePassword', generatePassword);
+let button = document.getElementById('btn') //main generate button
+button.addEventListener('generatePassword', generatePassword); //word on button and what function it triggers when clicked
+
 function generatePassword(){
 const passwordTypes = { //Creating 3 different Arrays. Found a was a way to create and block each one. (Arr opposed to charCode)
     letter: getRandomLetter,
